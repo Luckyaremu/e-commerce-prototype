@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 import { BsFillBagFill } from "react-icons/bs";
+import logo from "../logo/logo.png";
 const Nav = () => {
     const {totalQuantities} = useSelector(state => state.CartReducer)
     return (
@@ -9,7 +10,7 @@ const Nav = () => {
             <div className="container">
                 <div className="nav__container">
                     <div className="nav__left">
-                        <Link to="/"><img src="/images/logo.webp" alt="logo"/></Link>
+                        <Link to="/"><img src={logo} alt="logo"/></Link>
                     </div>
                     <div className="nav__right">
                         <Link to="/cart">

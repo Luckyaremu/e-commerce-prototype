@@ -20,7 +20,7 @@ const Cart = () => {
                             <div className="col-2">Price</div>
                             <div className="col-2">Inc/Dec</div>
                             <div className="col-2">Total Price</div>
-                            <div className="col-2">Remove</div>
+                            <div className="col-2">Delete</div>
                         </div>
                     </div>
                     {products.map(product => (
@@ -65,7 +65,7 @@ const Cart = () => {
                     <div className="col-3 summary-col">
                         <div className="summary">
                             <div className="summary__heading">
-                                Summary
+                                Summary of items
                             </div>
                             <div className="summary__details">
                                 <div className="row mb-10">
@@ -82,7 +82,7 @@ const Cart = () => {
                                         {currencyFormatter.format(totalPrice, {code: 'USD'})}
                                     </div>
                                 </div>
-                                <button type="button" className="checkout">Checkout</button>
+                                <button type="button" className="checkout">CheckOut</button>
                             </div>
                         </div>
                     </div>
